@@ -31,7 +31,7 @@ export class ListComponent {
       description: "Skończ robić projekt zamówiony przez klienta!",
       details: {
         dueDate: "Wtorek",
-        difficulty: "Bardzo duża"
+        difficulty: "Wysoka"
       }
     },
     {
@@ -58,7 +58,7 @@ export class ListComponent {
       description: "Na ostatniej przejażdzce popsułeś rower. Napraw go!",
       details: {
         dueDate: "Jutro",
-        difficulty: "Bardzo duża"
+        difficulty: "Wysoka"
       }
     }
   ];
