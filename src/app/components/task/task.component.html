@@ -5,11 +5,11 @@
     <div class="card-body">
         <h5 class="card-title">{{task.name}}</h5>
         <p class="card-text">{{task.description}}</p>
-        <button class="btn btn-info" (click)="toggleDetails()">Details</button>
+        <button class="btn btn-info" (click)="toggleDetails()">Szczegóły</button>
         <div *ngIf="showDetails" class="card-footer" style="margin-top: 9px; width: 30%;">
-            <p class="card-text" style="margin-bottom: 5px;">Due date: {{task.details.dueDate}}</p>
-            <p class="card-text">Difficulty: {{task.details.difficulty}}</p>
+            <p class="card-text" style="margin-bottom: 5px;">Termin: {{task.details.dueDate}}</p>
+            <p class="card-text">Trudność: {{task.details.difficulty}}</p>
         </div>
-        <button class="btn btn-light" style="margin: 10px 0 0 80%;" (click)="closeTask()">Close task</button>
+        <button class="btn btn-light" style="margin: 10px 0 0 80%;" (click)="closeTask()">Zamknij</button>
     </div>
 </div>
