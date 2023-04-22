@@ -1,0 +1,15 @@
+<div *ngIf="(task | json) != '{}'" class="card w-100" style="width: 18rem; border-color: grey;">
+    <div style="background-color: black;">
+        <img src={{task.image}} class="card-img-top" style="height: 250px; object-fit: contain;">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{task.name}}</h5>
+        <p class="card-text">{{task.description}}</p>
+        <button class="btn btn-info" (click)="toggleDetails()">Details</button>
+        <div *ngIf="showDetails" class="card-footer" style="margin-top: 9px; width: 30%;">
+            <p class="card-text" style="margin-bottom: 5px;">Due date: {{task.details.dueDate}}</p>
+            <p class="card-text">Difficulty: {{task.details.difficulty}}</p>
+        </div>
+        <button class="btn btn-light" style="margin: 10px 0 0 80%;" (click)="closeTask()">Close task</button>
+    </div>
+</div>
